@@ -1,2 +1,40 @@
-# nlp-emotion-analysis
-BERT and WRIME dataset based sentiment analysis for romance-related text.
+# NLP恋愛感情分析プログラム
+
+## 1. 概要
+本プロジェクトでは、BERTモデルとWRIMEデータセットを用いて、文章中の恋愛感情を定量化する自然言語処理プログラムを開発しました。  
+複数感情を分解・加重平均し、「累積恋愛感情スコア」を算出することで、告白文や恋愛表現の特徴を数値的に分析します。
+
+## 2. 目的・成果
+- 曖昧な恋愛感情を構造化し、分析可能か検証  
+- Python / NLP / BERT を用いた実践的分析スキルを示すポートフォリオとして提示  
+- Notebook・Pythonスクリプト・PDFで成果物をGitHub上で確認可能  
+
+## 3. 技術スタック
+- **言語・環境**: Python 3 / Jupyter Notebook / Google Colab  
+- **モデル**: bert-base-japanese-whole-word-masking  
+- **ライブラリ**: pandas, scikit-learn, transformers, matplotlib  
+
+## 4. ファイル構成
+| ファイル名 | 内容 |
+|------------|------|
+| `nlp-emotion-analysis.ipynb` | Notebook本体 |
+| `nlp-emotion-analysis.py` | Pythonスクリプト版 |
+| `emotion_analysis.pdf` | 研究用レポート（考察・実験結果） |
+
+## 5. 手法・工夫
+1. 日本語文章の前処理（形態素解析・不要文字除去）  
+2. BERTによる文章ごとの感情スコア推定  
+3. 恋愛感情スコアの定義（喜び・期待・信頼などを加重平均）  
+4. 文例ごとのスコア比較と可視化  
+
+## 6. 実験結果
+- 告白文や恋愛表現を含む文章では、恋愛感情スコアが高く算出  
+- 情景描写文では誤判定のケースもあり（課題として残る）  
+
+## 7. 学び・考察
+- 曖昧な感情も分解・整理することで技術的に扱えることを確認  
+- 感情スコアの重みは手動定義のため、学習による最適化の余地あり  
+- NLPを用いて課題分析と改善プロセスを実践できた  
+
+## 8. 注意事項
+- 実行にはWRIMEデータセットが必要 
