@@ -12,7 +12,7 @@
 ## 3. 技術スタック
 - **言語・環境**: Python 3 / Jupyter Notebook / Google Colab  
 - **モデル**: bert-base-japanese-whole-word-masking  
-- **ライブラリ**: pandas, scikit-learn, transformers, matplotlib  
+- **ライブラリ**: pandas, scikit-learn, transformers, matplotlib
 
 ## 4. ファイル構成
 | ファイル名 | 内容 |
